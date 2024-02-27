@@ -11,11 +11,7 @@ app.get('/', function(request, response) {
      //fusions ejs + data
 response.render('index.ejs', dataToDisplay);
             });
-let dataToDisplay = new Object();
-dataToDisplay.feedGeekWire = new Object();
-dataToDisplay.feedGeekWire.item = [];
-dataToDisplay.apiWeather = new Object();
-dataToDisplay.apiWeather.temperatures = [];
+
 dataToDisplay.movieDBApiData = new Object();
 dataToDisplay.movieDBApiData.results = [];
 
