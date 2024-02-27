@@ -1,0 +1,244 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+   background: #7073d9;
+   margin-top: 50px;
+   font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  .h11 {
+    font-family: 'Tangerine', serif;
+    font-size: 5rem;
+    text-shadow: 4px 4px 4px #aaa;
+    margin-top: 60px;
+    margin-left: 100px;
+    color: rgb(247, 243, 243);
+  }
+
+  .h1 {
+    font-family: 'Tangerine', serif;
+    font-size: 5rem;
+    text-shadow: 4px 4px 4px #aaa;
+    margin-top: 0;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(247, 243, 243);
+  }
+  .film {
+    
+    font-family: 'Tangerine', serif;
+    font-size: 5rem;
+    text-shadow: 4px 4px 4px #aaa;
+    margin-top: 0;
+    text-align: center;
+
+    color: rgb(247, 243, 243);
+  }
+   .p{
+    font-size: 24px;
+    font-family: "Great Vibes";
+    margin-top: 3%;
+    
+    margin-left: 16rem;
+    color: rgb(75, 36, 5);
+    
+   }
+   .pub{
+    font-size: 19px;
+    font-family: "Great Vibes";
+  
+    margin-right: 20px;
+    color: rgb(240, 158, 6);
+    text-align: center;
+   }
+   .journal{
+    font-size: 18px;
+    margin-top: 2px;
+    color: rgb(245, 244, 250);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;  
+   }
+
+   .des{
+    color: #2c086c;
+    margin: auto;
+   }
+  .h2,.navbar-nav {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: rgb(253, 244, 244);
+    text-align: center;
+    font-family: ;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+.container {
+  display:inline; 
+  
+    
+   
+    
+}
+  .column{
+      background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  width: 5vw;
+  height: 40vh;
+
+    
+    
+  }
+  .column1{
+  
+  
+  display: inline;
+    
+    font-size: 30px;
+    width: 15%;
+    height: 100vh;
+    background-size: 700px;
+    background-repeat: no-repeat;
+  
+    
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+    margin: auto;
+    
+  
+    
+    
+  }
+
+   
+   img {
+    
+    width:15%; 
+    height:auto;
+    margin-left: 150px;
+  
+    
+  
+    
+    border: 8px solid rgb(237, 183, 5);
+
+} 
+.logo{
+    width: 100px;
+    height:70px;
+}
+
+    
+  
+.card {
+  background-image: url(../img/Earth-Globe-PNG-Image.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  width: 9%;
+  height: 50%;
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.clock {
+    color: #f6fcfd;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
